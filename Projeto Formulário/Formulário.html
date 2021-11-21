@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_form.css" type="text/css">
+
+    <title>Criando Formulário</title>
+
+    <style>
+        
+
+    </style>
+
+</head>
+<body>
+
+<form>
+
+    <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+
+        <p>Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p> 
+        <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/></p>  
+        <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>  
+
+        <fieldset id="sexo"><legend>Sexo</legend>
+
+            <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+        </fieldset>
+            <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"/></p>
+    </fieldset>
+
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+
+            <p>Logradouro: <input type="text" name="cRua" id="cRua" size="16" maxlength="80" placeholder="Rua, Av, Trav,..."/></p>
+            <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+            <p>Estado:
+        <select name="tEst" id="cEst">
+
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="BH">Bahia</option>
+                <option value="AL">Alagoas</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>	
+
+        </select>
+
+            <p>Cidade:
+            <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade"/></p>	
+    </fieldset> 
+
+    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+
+        <p>Grau de Urgência:
+        Mín.<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx.</p> 
+        
+         
+               
+        <p id="ajuste">Mensagem:</p>
+        <p><textarea name="tMsg" id="cMsg" cols="43" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+              
+     
+
+    </fieldset>
+
+    <fieldset id="pedido"><legend>Quero um Google Glass</legend> 
+
+        <p><input type="checkbox" name="tPed" id="cPed" checked/><for="cPed"> Gostaria de adquirir um Google Glass quando disponível.</p> 
+        <p><for="cCod">Cor: <input type="color" name="tCor" id="cCor" value="#0000FF"/></p> 
+        <p><for="cQtd">Quantidade: <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/></p> 
+        <p><for="ccTot">Preço Total: R$ <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly/></p> 
+    </fieldset>
+
+    <p class="botao"> 
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar"/>
+    </p>
+
+
+    <footer id="rodape">
+
+        <p>Copyright &copy; 2021 - by Clayton Lima<br/>
+        <a href="#" target="_blank">Facebook</a> 
+        <a href="#" target="_blank">Instagram</a></p>
+
+    </footer>
+</form>
+
+</body>
+</html>

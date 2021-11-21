@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+    background-color: #00000019;
+    width: 500px;
+    padding: 5px;
+    margin: 10px auto;
+    box-shadow: 2px 1px 5px 2px #0000003f;   
+}
+
+form{
+    background-color: #00000026;
+    margin: auto 20px;
+    color: #00000095;
+}
+
+fieldset{
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+}
+
+#ajuste{
+    margin-bottom: -10px;
+}
+
+legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #000000db;
+}
+
+.botao, input{
+    border-radius: 5px;
+    color: blue;
+    font-size: 12px;
+    padding: 3px;
+    margin: 5px;
+}
+
+footer{
+    background-color: #0707075b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+   
+}
+
+footer a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
